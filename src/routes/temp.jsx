@@ -2,6 +2,7 @@ import img1 from '../assets/image1.png'
 import img2 from '../assets/image2.png'
 import { contentpolicy, termsofservices } from '../components/linksforfutureuse'
 
+import {Link} from 'react-router-dom'
 
 const OnePopup = ()=>{
     return <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center">
@@ -113,14 +114,218 @@ const TwoPopup = ()=>{
 
 
 
+const BuyCreditsPopup = ()=>{
+
+
+    return <div className='w-[370px] bg-white rounded-xl px-8 py-6 space-y-8'>
+
+<p className='text-xl font-semibold'>Buy Credits</p>
+
+<div className='mx-auto flex flex-col items-center gap-y-5'>
+
+
+    <div className='relative'>
+        <div className='w-12 h-12 bg-green-500 rounded-full'></div>
+        <div className='absolute top-0 right-0 w-6 h-6 bg-orange-500'></div>
+    </div>
+
+    <p className='font-semibold'>115 credits</p>
+
+
+    <p className='font-medium'>$15 USD</p>
+
+
+    <div className='flex gap-x-3 items-center'>
+
+    <div>ic</div>
+
+    <div className='h-9 w-9 rounded-md border flex justify-center items-center'>
+    <input type="text" className='w-full h-full text-center bg-transparent outline-none' value={1} name="" id="" />
+    </div>
+
+    <div>ic</div>
+
+
+    </div>
+
+
+</div>
+
+<div className='flex gap-x-4  font-semibold text-sm'>
+
+
+<div className='w-[70px] h-[40px]  bg-[#ECECF1] flex justify-center items-center rounded-md'>Cancel</div>
+
+
+
+<div className='flex-grow h-[40px] text-white bg-black flex justify-center items-center rounded-md'>Continue</div>
+
+
+
+</div>
+
+
+
+    </div>
+
+
+}
+
+
+
+const OrderSummaryPopup = ()=>{
+    return <div className='px-8 py-12 rounded-2xl w-[570px] bg-white space-y-7'>
+
+
+    <div className='space-x-4 text-xl font-semibold '> 
+        <span>ic</span>
+        <span>Order summary</span>
+    </div>
+
+
+
+<div className='space-y-7'>
+
+<div className='space-y-6'>
+
+<div className='flex text-[#ADADAD] font-medium'> 
+    <p>Description</p>
+    <p className='ml-auto'>Amount</p>
+</div>
+
+
+<div className=''>
+
+     <div className='border-t border-b py-4 justify-between text-lg flex font-medium'>
+
+        <p>115 credits</p>
+        <p>$15.00 USD</p>
+
+    </div>
+
+
+</div>
+
+
+<div className='  flex  font-medium justify-end gap-x-4'>
+
+<p className='text-[#8D8D8D] '>Estimated tax</p>
+
+<p>$0.00 USD</p>
+
+
+</div>
+
+
+<div className='  flex font-medium justify-end gap-x-4'>
+
+<p className='text-[#8D8D8D] '>Estimated total</p>
+
+<p>$15.00 USD</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div className='text-[#8D8D8D]  font-medium'>
+    <p className='mb-2'>Paid credits will expire one year from today.</p>
+    <Link to={termsofservices}>Terms</Link>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+    <div className='space-y-6 pt-6'>
+
+<p className='font-semibold text-xl'>Payment method</p>
+
+
+
+
+
+
+
+
+<div className='space-y-4 font-medium'>
+{[1,2].map(elem=>{
+    return <div className='px-4 py-5 rounded-md gap-x-4 border items-center flex'>
+
+        <div className='w-14 h-9 bg-orange-500'></div>
+
+    <div >
+        <p className='text-lg'>Visa</p>
+        <p className='text-[#8D8D8D] text-sm'>Expires 09/2026</p>
+    </div>
+
+    <div className='ml-auto'>ic</div>
+
+
+    </div>
+})}
+
+</div>
+
+
+<div className='text-right font-semibold space-x-3'>
+    <span>ic</span>
+    <span>Add payment method</span>
+</div>
+
+
+
+
+    </div>
+
+
+
+    <div className='flex gap-x-4  font-semibold text-sm'>
+
+
+<div className='w-[70px] h-[50px]  bg-[#ECECF1] flex justify-center items-center rounded-md'>Back</div>
+
+
+
+<div className='flex-grow h-[50px] text-white bg-black flex justify-center items-center rounded-md'>Complete Payment</div>
+
+
+
+</div>
+
+
+
+    </div>
+}
+
+
 
 export default function Temp(){
     return <div className="bg-black  ">
         
         
-    <TwoPopup/>
+    {/* <TwoPopup/> */}
     
     
+    <div className='w-full py-20   flex justify-center items-center'>
+        
+{/* <BuyCreditsPopup/> */}
+
+
+<OrderSummaryPopup/>
+
+
+</div>
 
     </div>
 

@@ -1,4 +1,4 @@
-import AuthCommonScreens from "../components/AuthCommonScreens";
+import AuthCommonScreens from "../components/authCommonScreens";
 
 import MetamaskLogo from '../assets/walletlogos/metamask.svg'
 import CoinbaseLogo from '../assets/walletlogos/coinbase.svg'

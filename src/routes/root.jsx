@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/navbar'
 import {ETHAddress} from '../components/utils'
 import secondaryLogo from '../assets/secondary-logo.svg'
 
@@ -10,10 +10,10 @@ function Homepage() {
 
   return (
 
-    <div className='bg-primary h-[978px]'>
+    <div className='bg-primary h-[978px] tabtolargemob:h-[1100px]'>
 
 
-<div className='tabtolargemob:hidden'>
+<div >
   <Navbar/>
   </div>
 
@@ -29,7 +29,7 @@ function Homepage() {
 <h1 className=' tabtolargemob:flex tabtolargemob:flex-col tabtolargemob:space-y-8 uppercase desktotab:text-center font-bold mobile:text-[90px] text-[115px] mobile:leading-[65px]  leading-[96px]  '><span className='textGradientCSS' style={{fontFamily: 'Chakra Petch, sans-serif'}}>Watch</span> <span >Dogs</span> </h1>
 
 
-<div className='  w-[835px] h-[117px] -my-[5%]  leading-10 text-[32px] largemobtomob:text-2xl mobile:text-lg mobile:leading-12'>
+<div className='  max-w-[835px] h-[117px] -my-[5%]  leading-10 text-[32px] largemobtomob:text-2xl mobile:text-lg mobile:leading-12'>
   <p className='text-center w-full'>We know what you do in the dark.. </p>
 </div>
 

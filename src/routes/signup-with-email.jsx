@@ -2,7 +2,7 @@ import logo from '../assets/logo.png'
 
 import googlelogo from '../assets/googlelogo.svg'
 import microsoftlogo from '../assets/microsoftlogo.svg'
-import AuthCommonScreens from '../components/AuthCommonScreens'
+import AuthCommonScreens from '../components/authCommonScreens'
 
 import {ContinueButton} from '../components/utils'
 

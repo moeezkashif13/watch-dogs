@@ -10,7 +10,7 @@ export default {
       screens:{
 
 
-        'desktotab': {'max': '1024px'},
+        'desktotab': {'max': '1100px'},
         'tabtolargemob': {'max': '800px'},
         'largemobtomob' : {'max' : '550px'},
         'mobile' : {'max' : '420px'},

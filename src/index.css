@@ -409,15 +409,20 @@ html {
 .navbarbg{
     
     
-    background: -webkit-linear-gradient(to bottom,#000000,#511278,#AD27FF,#FFC42EFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(30.25deg, rgba(255, 196, 46, 0.99) 9.47%, #AD27FF 38.95%, #511278 51.84%, #000000 82.54%);
 
-    background: linear-gradient(to bottom,#000000,#511278,#AD27FF,#FFC42EFC);  /* Chrome 10-25, Safari 5.1-6 */
 
 
    
    
     
     
+}
+
+
+.introbg{
+  background: linear-gradient(30.25deg, rgba(255, 196, 46, 0.99) -0.97%, #AD27FF 46.93%, #511278 67.19%, #000000 91.75%);
+
 }
 
 

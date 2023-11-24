@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png'
-
+import {Link} from 'react-router-dom'
+import { about, contentpolicy, termsofservices } from './linksforfutureuse'
 
 const Box = ()=>{
     return <div className='w-[226px]  rounded-[10px] bg-[#E5E4E4] pb-1.5 space-y-3'>
@@ -34,15 +35,15 @@ const Box = ()=>{
 <div className=' font-medium text-sm leading-[14px]'>
 
 
-    <p className='h-[27px] flex items-center    px-[14px]'>My portfolio</p>
+    <Link to='/signup' className='h-[27px] flex items-center    px-[14px]'>My portfolio</Link>
 
-    <p className='h-[27px] flex items-center    px-[14px]'>What is Watch Dogs?</p>
-
-
-    <p className='h-[27px] flex items-center    px-[14px]'>Sign Up &nbsp; <span className='text-[#383838] text-[10px] leading-3'>(Get <span>10</span> extra search credits)</span></p>
+    <Link to='/introduction' className='h-[27px] flex items-center    px-[14px]'>What is Watch Dogs?</Link>
 
 
-    <p className='h-[27px] flex items-center    px-[14px]'>Sign in</p>
+    <Link to='/signup' className='h-[27px] flex items-center    px-[14px]'>Sign Up &nbsp; <span className='text-[#383838] text-[10px] leading-3'>(Get <span>10</span> extra search credits)</span></Link>
+
+
+    <Link to='/signup-with-email' className='h-[27px] flex items-center    px-[14px]'>Sign in</Link>
 
 
 </div>
@@ -52,11 +53,11 @@ const Box = ()=>{
 <div className='border-t border-t-[#C8C4C4] px-[10px]  text-xs leading-[7px] text-[#797777]  flex gap-x-3 pt-1'>
 
 
-<p className='h-[26px] flex items-center'>Content policy</p>
+<Link to={contentpolicy} className='h-[26px] flex items-center'>Content policy</Link>
 
-<p className='h-[26px] flex items-center'>Terms</p>
+<Link to={termsofservices} className='h-[26px] flex items-center'>Terms</Link>
 
-<p className='h-[26px] flex items-center'>About</p>
+<Link to={about} className='h-[26px] flex items-center'>About</Link>
 
 </div>
 
@@ -71,7 +72,7 @@ const Box = ()=>{
 
 
 
-export default function Navbar(){
+export default function Navbar({bg}){
 
 const toggleBox = ()=>{
     
@@ -82,54 +83,50 @@ const toggleBox = ()=>{
 
 
 
-    return <div className=" h-[98px] w-full flex   justify-between pl-[71px] pr-[61px]  navbarbg items-center">
+    return <div className={` h-[98px] w-full flex   justify-between pl-[71px] pr-[61px]       ${bg?bg:'navbarbg'} items-center tabtolargemob:px-6 largemobtomob:flex-col largemobtomob:h-auto largemobtomob:py-5 largemobtomob:justify-center largemobtomob:gap-y-4`}>
 
 
-<div className="flex gap-[132px] items-center ">
+<div className="flex gap-[132px] tabtolargemob:gap-12 mobile:gap-6 items-center ">
 
-<div className='w-[55px] h-[61px]'>
+<Link to='/' className='w-[55px] h-[61px]'>
     
     <img src={logo} className='w-full max-w-full h-full object-cover' alt="" />
 
-</div>
+</Link>
 
-<div className='flex gap-16 text-[rgba(255,253,253,0.9)] font-medium '>
+<div className='flex gap-16 mobile:gap-8 mobile:text-xs tabtolargemob:gap-12 text-[rgba(255,253,253,0.9)] font-medium '>
     <p className='leading-5'>Search</p>
-    <p className='leading-5'>What is Watch Dogs?</p>
+    <Link to='/introduction' className='leading-5'>What is Watch Dogs?</Link>
 </div>
 
 
 </div>
 
+<div className='relative'>
 
-<div>
+<div className='cursor-pointer' onClick={toggleBox}>
     
-<div className="flex  gap-x-6 items-center justify-end relative">
+<div className="flex  gap-x-6 items-center justify-end ">
+
+<div className="flex gap-x-1" >
+    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
+    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
+    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
+</div>
+
+<div  className="w-12 h-12 rounded-full bg-[#D9D9D9]"></div>
+
+
+</div>
 
 
 
-<div   style={{transition:'all 0.3s'}} className='smallBox hideIt absolute right-0 top-16 '>
+</div>
+
+
+<div   style={{transition:'all 0.3s'}} className='smallBox hideIt absolute  right-0 mobile:right-[50%] mobile:translate-x-[50%] top-16 '>
 <Box/>
 </div>
-
-
-
-
-
-
-<div className="flex gap-x-1" onClick={toggleBox}>
-    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
-    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
-    <div className="w-[5px] h-[5px] rounded-full bg-[#D9D9D9]"></div>
-</div>
-
-<div onClick={toggleBox} className="w-12 h-12 rounded-full bg-[#D9D9D9]"></div>
-
-
-</div>
-
-
-
 
 
 </div>

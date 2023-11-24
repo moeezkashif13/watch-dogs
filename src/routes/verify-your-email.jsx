@@ -1,5 +1,5 @@
 
-import AuthCommonScreens from "../components/AuthCommonScreens";
+import AuthCommonScreens from "../components/authCommonScreens";
 
 
 export default function VerifyYourEmail(){

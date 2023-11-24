@@ -22,6 +22,7 @@ import CallYou from './routes/call-you.jsx';
 import VerifyYourEmail from './routes/verify-your-email.jsx';
 import VerifyMobile from './routes/verify-mobile.jsx';
 import Temp from './routes/temp.jsx';
+import Introduction from './routes/introduction.jsx';
 
 
 const router = createBrowserRouter([
@@ -64,6 +65,13 @@ const router = createBrowserRouter([
     {
     path: "/temp",
     element: <Temp/>,
+    errorElement: <ErrorPage />,
+
+  },
+
+  {
+    path: "/introduction",
+    element: <Introduction/>,
     errorElement: <ErrorPage />,
 
   },

@@ -1,5 +1,5 @@
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import verified from '../assets/verified.svg'
 import {ETHAddress} from '../components/utils'
 import {useMemo} from 'react'
@@ -8,10 +8,10 @@ import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { useState } from "react";
 import { Data } from "../components/utils/data";
-import DoughnutChart from "../components/DoughnutChart";
-import BubbleChart from "../components/BubbleChart";
+import DoughnutChart from "../components/doughnutChart";
+import BubbleChart from "../components/bubbleChart";
 import { Table } from "@table-library/react-table-library";
-import CreatedTable from "../components/TableRelated/table";
+import CreatedTable from "../components/tablerelated/table";
 
 Chart.register(CategoryScale);
 
