@@ -1,5 +1,5 @@
 
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import verified from '../assets/verified.svg'
 import {ETHAddress} from '../components/utils'
 import {useMemo} from 'react'
@@ -8,10 +8,10 @@ import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { useState } from "react";
 import { Data } from "../components/utils/data";
-import DoughnutChart from "../components/doughnutChart";
-import BubbleChart from "../components/bubbleChart";
+import DoughnutChart from "../components/DoughnutChart";
+import BubbleChart from "../components/BubbleChart";
 import { Table } from "@table-library/react-table-library";
-import CreatedTable from "../components/tablerelated/table";
+import CreatedTable from "../components/tablerelated/Table";
 
 Chart.register(CategoryScale);
 
@@ -408,7 +408,7 @@ const Fifth = ()=>{
 
 <div className="w-[1150px] h-[600px] text-white mx-auto">
 
-    {/* <BubbleChart chartData={data} /> */}
+
     <BubbleChart  />
 
 

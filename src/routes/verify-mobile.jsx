@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import AuthCommonScreens from "../components/authCommonScreens"
+import AuthCommonScreens from "../components/AuthCommonScreens"
 import  axios from 'axios';
 
 

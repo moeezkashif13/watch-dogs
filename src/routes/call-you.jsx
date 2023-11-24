@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AuthCommonScreens from "../components/authCommonScreens";
+import AuthCommonScreens from "../components/AuthCommonScreens";
 import { termsofservices } from "../components/linksforfutureuse";
 import { ContinueButton } from "../components/utils";
 

@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import {ETHAddress} from '../components/utils'
 import secondaryLogo from '../assets/secondary-logo.svg'
 
 
 
 function Homepage() {
-  const [count, setCount] = useState(0)
 
+  
   return (
 
     <div className='bg-primary h-[978px] tabtolargemob:h-[1100px]'>
