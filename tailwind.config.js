@@ -11,6 +11,8 @@ export default {
 
 
         'desktotab': {'max': '1100px'},
+        'seconddesktotab': {'max': '1000px'},
+
         'tabtolargemob': {'max': '800px'},
         'largemobtomob' : {'max' : '550px'},
         'mobile' : {'max' : '420px'},
