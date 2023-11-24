@@ -10,7 +10,7 @@ import { useState } from "react";
 import { Data } from "../components/utils/data";
 import DoughnutChart from "../components/DoughnutChart";
 import BubbleChart from "../components/BubbleChart";
-import { Table } from "@table-library/react-table-library";
+
 import CreatedTable from "../components/tablerelated/Table";
 
 Chart.register(CategoryScale);
